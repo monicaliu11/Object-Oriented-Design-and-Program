@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<project name="HW03" basedir="." default="test">
+
+    <property environment="env"/>
+    <property name="JUNIT" value="${env.JUNIT}"/>
+
+    <path id="class.path">
+        <fileset dir="lib">
+            <include name="**/*.jar"/>
+        </fileset>
+        <pathelement location="bin"/>
+        <pathelement path="${env.JUNIT}"/>
+        <pathelement path = "bin"/>
+        <pathelement path = "test/bin"/>
+    </path>
+
+    <target name="clean">
+        <delete dir="bin"/>
+        <delete dir="test/bin"/>
+    </target>
+
+
+    <target name="compile">
+        <mkdir dir="bin"/>
+        <javac srcdir="src" destdir="bin"
+               includeantruntime="true"/>
+        <mkdir dir="test/bin"/>
+        <javac srcdir="test/src" destdir="test/bin"
+               includeantruntime="false"
+               classpathref="class.path">
+        </javac>
+
+    </target>
+
+    <target name="test" depends="compile">
+        <junitlauncher haltOnFailure="true" printSummary="true">
+            <classpath refid="class.path"/>
+            <testclasses outputdir="test/bin">
+                <fileset dir="test/bin">
+                    <include name="edu/umb/cs680/hw03/*Test.class"/>
+                </fileset>
+                <listener type="legacy-brief" sendSysOut="true"/>
+                <listener type="legacy-xml" sendSysErr="true" sendSysOut="true"/>
+            </testclasses>
+        </junitlauncher>
+    </target>
+
+</project>

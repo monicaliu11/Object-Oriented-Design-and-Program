@@ -1,0 +1,34 @@
+Testcase: edu.umb.cs680.hw10.MulticastTest
+Tests run: 1, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 25 milli sec(s)
+------------- Standard Output ---------------
+Process pie chart update for Stock event: StockEvent: [ticket0, 0.9982793]
+Process table update for Stock event: StockEvent: [ticket0, 0.9982793]
+Process 3D update for Stock event: StockEvent: [ticket0, 0.9982793]
+Process pie chart update for Stock event: StockEvent: [ticket1, 0.4104758]
+Process table update for Stock event: StockEvent: [ticket1, 0.4104758]
+Process 3D update for Stock event: StockEvent: [ticket1, 0.4104758]
+Process pie chart update for DJIA event: DJIAEvent: 0.5251139
+Process table update for DJIA event: DJIAEvent: 0.5251139
+Process 3D update for DJIA event: DJIAEvent: 0.5251139
+Process pie chart update for DJIA event: DJIAEvent: 0.09650236
+Process table update for DJIA event: DJIAEvent: 0.09650236
+Process 3D update for DJIA event: DJIAEvent: 0.09650236
+Process pie chart update for Stock event: StockEvent: [ticket4, 0.49582517]
+Process table update for Stock event: StockEvent: [ticket4, 0.49582517]
+Process 3D update for Stock event: StockEvent: [ticket4, 0.49582517]
+Process pie chart update for Stock event: StockEvent: [ticket5, 0.951302]
+Process table update for Stock event: StockEvent: [ticket5, 0.951302]
+Process 3D update for Stock event: StockEvent: [ticket5, 0.951302]
+Process pie chart update for DJIA event: DJIAEvent: 0.7337488
+Process table update for DJIA event: DJIAEvent: 0.7337488
+Process 3D update for DJIA event: DJIAEvent: 0.7337488
+Process pie chart update for Stock event: StockEvent: [ticket7, 0.47428042]
+Process table update for Stock event: StockEvent: [ticket7, 0.47428042]
+Process 3D update for Stock event: StockEvent: [ticket7, 0.47428042]
+Process pie chart update for DJIA event: DJIAEvent: 0.6035256
+Process table update for DJIA event: DJIAEvent: 0.6035256
+Process 3D update for DJIA event: DJIAEvent: 0.6035256
+Process pie chart update for Stock event: StockEvent: [ticket9, 0.62916654]
+Process table update for Stock event: StockEvent: [ticket9, 0.62916654]
+Process 3D update for Stock event: StockEvent: [ticket9, 0.62916654]
+------------- ---------------- ---------------
